@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // tag selection
+        $("h1").css("color", "red");
+
+        // class selection
+        $(".classSelector h1").css("color", "blue");
+
+        // id selection
+        $("#idSelector h1").css("color", "green");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>tag selection</h1>
+    <div class="classSelector">
+      <h1>class selection</h1>
+    </div>
+    <div id="idSelector">
+      <h1>id selection</h1>
+    </div>
+  </body>
+</html>

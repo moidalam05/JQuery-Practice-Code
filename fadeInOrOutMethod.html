@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // fadeIn method
+        $("#fadeIn").click(function () {
+          $(".green").fadeIn();
+          $(".blue").fadeIn("fast");
+          $(".yellow").fadeIn("slow");
+          $(".orange").fadeIn(2000);
+        });
+
+        // fadeOut method
+        $("#fadeOut").click(function () {
+          $(".green").fadeOut();
+          $(".blue").fadeOut("fast");
+          $(".yellow").fadeOut("slow");
+          $(".orange").fadeOut(2000);
+        });
+      });
+    </script>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .green {
+      background-color: green;
+      width: 300px;
+      height: 300px;
+      display: none;
+    }
+    .blue {
+      background-color: blue;
+      width: 300px;
+      height: 300px;
+      display: none;
+    }
+    .yellow {
+      background-color: yellow;
+      width: 300px;
+      height: 300px;
+      display: none;
+    }
+    .orange {
+      background-color: orange;
+      width: 300px;
+      height: 300px;
+      display: none;
+    }
+    .btns {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <h1>fadeIn and fadeOut Method</h1>
+    <div class="container">
+      <div class="green">green</div>
+      <div class="blue">blue</div>
+      <div class="yellow">yellow</div>
+      <div class="orange">orange</div>
+    </div>
+    <div class="btns">
+      <button id="fadeIn">Fade In</button>
+      <button id="fadeOut">Fade Out</button>
+    </div>
+  </body>
+</html>
